@@ -18,7 +18,7 @@ if ( ! process.env.PORT ) {
 
 const app: Express = express();
 
-const PORT: number = parseInt(process.env.PORT as string, 10);
+const port = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cors());
@@ -26,6 +26,6 @@ app.use(cors());
 app.use("/", routes);
 
 
-app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`);
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
 });
