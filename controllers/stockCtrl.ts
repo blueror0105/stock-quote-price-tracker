@@ -44,11 +44,15 @@ const StockCtrl  = {
     getQuote: async(req: Request, res: Response) => {
         const { symbol } = req.query;
 
-        const result = await api.get(`${FINNHUB_URL}/quote?symbol=${symbol}`);
+        try {
+            const result = await api.get(`${FINNHUB_URL}/quote?symbol=${symbol}`);
 
-        const data: StockProps = await StockCtrl.makeStockResp(result.data, symbol as string);
+            const data: StockProps = await StockCtrl.makeStockResp(result.data, symbol as string);
 
-        return res.json(data);
+            return res.json(data);
+        } catch (error) {
+            return res.status(500).json({msg: "error"});
+        }
     },
 
 
