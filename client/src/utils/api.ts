@@ -1,4 +1,4 @@
-export const URL: string | undefined = process.env.SERVER_URL;
+export const URL: string = 'http://localhost:8000';
 
 
 export const getStockPrice = async <T>(
