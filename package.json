@@ -7,6 +7,11 @@
     "dev": "ts-node-dev --respawn --pretty --transpile-only server/index.ts",
     "start": "concurrently \"ts-node-dev server/index.ts\" \"cd client && yarn start\""
   },
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": ">=16.0.0 <18",
+    "yarn": ">=1.22.15"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
