@@ -25,3 +25,7 @@ You can run the project using only one command line.
 In the project `root` directory, just run the following
 
 `yarn dev`
+
+
+![image](https://user-images.githubusercontent.com/94537811/199838003-cbef581c-8e76-4111-89a1-78ed13254e0b.png)
+
