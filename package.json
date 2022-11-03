@@ -9,7 +9,7 @@
     "dev": "concurrently \"ts-node-dev index.ts\" \"cd client && yarn start\""
   },
   "engines": {
-    "node": ">=16.0.0 <18",
+    "node": "16.17.0",
     "yarn": ">=1.22.15"
   },
   "keywords": [],
