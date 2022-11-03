@@ -24,4 +24,4 @@ Running project is very simple.
 You can run the project using only one command line.
 In the project `root` directory, just run the following
 
-`yarn start`
+`yarn dev`
