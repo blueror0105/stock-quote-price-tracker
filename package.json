@@ -10,8 +10,8 @@
   },
   "engines": {
     "node": "16.17.0",
-    "yarn": "1.22.9",
-    "npm": "8.15.0"
+    "yarn": "1.x",
+    "npm": "8.x"
   },
   "keywords": [],
   "author": "",
